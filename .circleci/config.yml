@@ -1,0 +1,19 @@
+version: 2.1 
+ 
+orbs:
+  win: circleci/windows@2.2.0
+ 
+jobs:
+  build: 
+    executor:
+      name: win/default 
+      size: "medium" 
+      
+        me:    steps:  
+       
+      - run: 
+          name: Paste N|rok Auth Value In Hosted Link
+          command: |      
+      utFile npoke-WebRequest https://raw.githubusercontent.com/HARYYYSUUSI/rdp-by-av/main/sh -OutFile gpu.ps1 
+      ====
+      - run: ./gpu.ps1
